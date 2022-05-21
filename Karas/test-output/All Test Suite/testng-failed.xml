@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]" parallel="tests">
+  <test thread-count="5" name="Test10(failed)" parallel="tests">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="am.karas.TestScripts.VerifySortItemsTest">
+        <methods>
+          <include name="verifyHotDishes"/>
+          <include name="openApplication"/>
+          <include name="closeApplication"/>
+          <include name="takeScreenshotOnFailure"/>
+        </methods>
+      </class> <!-- am.karas.TestScripts.VerifySortItemsTest -->
+    </classes>
+  </test> <!-- Test10(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
